@@ -82,6 +82,37 @@
         <h1>Center</h1>
       </div>
 
+
+      <div class="columns-2">
+        <p>Well, let me tell you something, ...</p>
+        <p class="break-inside-avoid-column">Sure, go ahead, laugh...</p>
+        <p>Maybe we can live without...</p>
+        <p>Look. If you think this is...</p>
+      </div>
+
+      <span class="box-decoration-slice bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...">
+        Hello<br>
+        World
+      </span>
+      <span class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...">
+        Hello<br>
+        World
+      </span>
+
+
+      <div>
+        When controlling the flow of text, using the CSS property
+        <span class="inline">display: inline</span>
+        will cause the text inside the element to wrap normally.
+      
+        While using the property <span class="inline-block">display: inline-block</span>
+        will wrap the element to prevent the text inside from extending beyond its parent.
+      
+        Lastly, using the property <span class="block">display: block</span>
+        will put the element on its own line and fill its parent.
+      </div>
+
+
 </body>
 
 </html>
