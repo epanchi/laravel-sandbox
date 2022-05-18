@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ShortLinkRequest;
 use App\Models\ShortLink;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class ShortLinkController extends Controller
 {
@@ -16,6 +17,8 @@ class ShortLinkController extends Controller
 
     public function store(ShortLinkRequest $request){
         
-        return redirect('/');
+        ShortLink::create(['code'=>Str::random(6),'url'=>$request->link]);
+
+        return redirect('shortenlink')->with('success', 'Shorten Link Generated Successfully!');;
     }
 }
