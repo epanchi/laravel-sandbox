@@ -17,6 +17,7 @@ return new class extends Migration
             $table->increments('id');
             $table->string('code');
             $table->string('url');
+            $table->integer('counter')->default(0);
             $table->timestamps();
         });
     }
