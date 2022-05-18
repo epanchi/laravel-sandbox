@@ -9,7 +9,7 @@ class ShortLinkController extends Controller
 {
     public function index(){
         $shortLinks=ShortLink::get();
-        dd($shortLinks);
+        
         return view('sh_links',['results'=>$shortLinks]);
     }
 }
