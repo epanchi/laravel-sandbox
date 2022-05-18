@@ -21,7 +21,7 @@
     </form>
 
     <h1>Short Url list</h1>
-    <table border="1" style="border: 1px">
+    <table class="table">
         <th>
         <td>Code</td>
         <td>Url</td>
