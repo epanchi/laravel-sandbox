@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ShortLinkController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('tw',function(){
-    return view('tw');
-});
+// Route::get('tw',function(){
+//     return view('tw');
+// });
+Route::get('shortenlink',[ShortLinkController::class,'index']);
+Route::post('generate-code',[ShortLinkController::class,'store'])->name('generate.shorten.link.post');
