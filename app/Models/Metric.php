@@ -5,16 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ShortLink extends Model
+class Metric extends Model
 {
     use HasFactory;
 
     protected $fillable=[
-        'code','url'
+        'short_linkid','platform'
     ];
-    
-    public function metrics(){
-        return $this->hasMany(Metric::class,'short_linkid','id');
-    }
 
 }

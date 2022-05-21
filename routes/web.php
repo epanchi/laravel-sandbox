@@ -23,3 +23,7 @@ Route::get('/', function () {
 // });
 Route::get('shortenlink',[ShortLinkController::class,'index']);
 Route::post('generate-code',[ShortLinkController::class,'store'])->name('generate.shorten.link.post');
+
+Route::get('/{code}',[ShortLinkController::class,'track']);
+
+Route::get('/urls/{code}',[ShortLinkController::class,'metrics']);
